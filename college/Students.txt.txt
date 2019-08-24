@@ -2,3 +2,6 @@ ECE: students
 sudhakar
 ashok
 rakesh
+
+EEE:
+janardhan
