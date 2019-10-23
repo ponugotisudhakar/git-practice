@@ -1,0 +1,21 @@
+ANSIBLE Installation:
+
+- install ANsible 
+	- vi /etc/ssh/sshd_config   -- change password Authendication:yes
+	- service sshd restart
+	- service sshd status
+	- create user
+		- adduser ansible : need to give access all
+		- visudo : for user administarative permissions make change ansible ALL=(ALL:ALL) NOPASSWD:ALL
+	- ssh-keygen
+		- ls .ssh/
+	- ssh-copy-id ansible@ node DNS name or IPADRESS
+	- then enter ssh DNS of the node  -- login without pasword 
+
+	- Nodes:
+ 		- Create user with same ansible
+		- Enable password vi /etc/ssh/sshd_config and visudo
+		- install python only
+		- not installed ansible in NODES
+
+- Install Jenkins by usni Ansible file [Ansible Galaxy]
