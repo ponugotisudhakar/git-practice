@@ -7,6 +7,11 @@ ANSIBLE Installation:
 	- create user
 		- adduser ansible : need to give access all
 		- visudo : for user administarative permissions make change ansible ALL=(ALL:ALL) NOPASSWD:ALL
+	-  sudo apt update
+	-  sudo apt install software-properties-common
+	-  sudo apt-add-repository --yes --update ppa:ansible/ansible
+	-  sudo apt install ansible
+	
 	- ssh-keygen
 		- ls .ssh/
 	- ssh-copy-id ansible@ node DNS name or IPADRESS
