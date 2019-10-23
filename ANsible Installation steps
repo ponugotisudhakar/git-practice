@@ -11,11 +11,16 @@ ANSIBLE Installation:
 		- ls .ssh/
 	- ssh-copy-id ansible@ node DNS name or IPADRESS
 	- then enter ssh DNS of the node  -- login without pasword 
+	- navigate to vi /etc/ansible/hostes    --- enter bottom "localhost"
+	- tried with ansible -m ping all
+	- In servcer  machine also use:  ssh-copy-id ansible@localhost
+	- Enter Nodes DNS here and tried with "ansible -m ping all"
 
 	- Nodes:
  		- Create user with same ansible
 		- Enable password vi /etc/ssh/sshd_config and visudo
 		- install python only
 		- not installed ansible in NODES
+
 
 - Install Jenkins by usni Ansible file [Ansible Galaxy]
